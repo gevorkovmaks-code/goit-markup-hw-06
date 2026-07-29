@@ -1,0 +1,59 @@
+body {
+    color: #434455;
+    background-color: #FFFFFF;
+    font-family: 'Roboto' ,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.team,
+.portfolio {
+    padding: 120px 0;
+
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+ul,ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+address {
+    font-style: normal;
+}
+button{
+    font-family: inherit;
+    cursor: pointer;
+}
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+
+
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+}
+
