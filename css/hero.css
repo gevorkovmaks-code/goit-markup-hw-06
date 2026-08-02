@@ -92,6 +92,7 @@
     line-height: 1.07;
     max-width: 496px;
     margin-bottom: 48px;
+    margin-bottom: 36px;
 
 }
     
@@ -112,7 +113,9 @@
      , url(../images/hero-bg_desk@2x.png);
     }
 }
-
+.hero-title{
+    margin-bottom: 48px;
+}
 
 
 }

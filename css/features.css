@@ -43,17 +43,8 @@ row-gap: 72px;
     
 }
 
-.icons-contur{
-    display: none;
-    background-color: #f4f4fd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    margin-bottom: 8px;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-
+.icons-contur {
+  display: none;
 }
 
 
@@ -88,5 +79,12 @@ font-weight: 400;
 }
 .icons-contur{
     display: flex;
-}
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    margin-bottom: 8px;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+  }
 }

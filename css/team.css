@@ -95,7 +95,7 @@ row-gap: 64px;
 }
     
 }
-@media screen and (width: 1158px) {
+@media screen and (min-width: 1158px) {
 .team-list{
     flex-wrap: nowrap;
 gap: 24px;
