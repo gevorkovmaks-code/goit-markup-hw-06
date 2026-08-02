@@ -1,24 +1,20 @@
 .footer {
-    padding: 100px 0px;
     background: #2e2f42;
 }
 
 
 .footer .container {
     display: flex;
-}
-
-.container {
-    width: 100%;
-    max-width: 1158px;
-    margin: 0 auto;
+align-items: center;
+flex-direction: column;
+row-gap: 72px;
 }
 
 
 .footer-info {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    margin-right: 120px;
 }
 
 .footer-logo {
@@ -49,7 +45,9 @@
  
 
 .footer-social-media {
-    margin-right: 83px;
+    display: flex;
+align-items: center;
+flex-direction: column;
 
  
 }
@@ -57,7 +55,7 @@
 .footer-title-media {
     font-weight: 500;
     margin-bottom: 16px;
-    color: #ffffff;
+    color: #fff;
 }
 
 .footer-media-list {
@@ -93,6 +91,9 @@
 }
 
 .footer-subscribe{
+    display: flex;
+align-items: center;
+flex-direction: column;
 
 }
 
@@ -104,6 +105,8 @@
 .subscribe-form {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    gap: 16px;
 }
 .subscribe-label {
     margin-left: auto;
@@ -122,7 +125,6 @@
     padding: 8px 16px;
     background-color: transparent ;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-right: 24px;
 }
 .subscribe-email:focus{
 border: 1px solid #31d0aa;
@@ -157,4 +159,50 @@ border: 1px solid #31d0aa;
     background-color: #31d0aa;}
 .subscribe-icon {
     fill: white;
+}
+
+@media screen and (min-width: 768px) {
+.footer .container{
+flex-wrap: wrap;
+align-items: flex-start;
+flex-direction: row;
+row-gap: 72px;
+column-gap: 24px;
+padding: 0px 108px;
+
+}
+.footer-info{
+    align-items: flex-start;
+
+}
+.footer-social-media{
+    align-items: flex-start;
+
+}
+
+.footer-subscribe{
+    align-items: flex-start;
+}
+.subscribe-form{
+    flex-direction: row;
+    gap: 24px;
+
+}
+}
+@media screen and (min-width: 1158px) {
+.footer .container{
+    padding: 0px 15px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    column-gap: 0px;
+    row-gap: 0px;
+}   
+
+.footer-info{
+    margin-right: 120px;
+}
+
+.footer-social-media{
+    margin-right: 83px;
+}
 }

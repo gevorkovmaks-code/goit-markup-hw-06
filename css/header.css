@@ -1,9 +1,8 @@
-.header {
-    border-bottom: 1px solid #e7e9fc
- 
+.header{
+    padding: 16px 0;
 }
 
-.logo {
+.logo{
     display: flex;
     align-items: center;
     font-family: 'Raleway',  sans-serif;
@@ -14,29 +13,53 @@
     text-transform: uppercase;
    
 }
+.header-logo .logo-accent {
+    color: #4d5ae5;
+}
 
-.header .container{
+.header-logo .logo-dark {
+    color: #2e2f42;
+}
+
+.header > .container{
     display: flex;
     align-items: center;
 }
+.header-menu-button{
+    background-color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 4px;
+    margin-left: auto;
+}
 
+.menu-burger{
+
+}
+
+@media screen and (max-width: 767.98px) {
+.header-nav,
+.address{
+    display: none;
+}
+}
+
+@media screen and (min-width: 768px) {
+.header{
+    padding: 24px 0;
+}
 .header-nav {
-    margin-left: 76px;
+    margin-left: 120px;
     margin-right: auto;
   
 }
-
 .header-nav-list {
     display: flex;
-    align-items: center;
     gap: 40px;
 
 }
-
-.header-nav-item {
-
-}
-
 .header-nav-link {
     display: block;
     padding-top: 24px;
@@ -46,31 +69,18 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-
-.address {
-}
-
 .contacts {
     display: flex;
-    align-items: center;
-    gap: 40px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
 
 }
-
-.contacts-item {
-
-}
-
 .contacts-link {
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-
-.header-nav-link.current {
-    position: relative;
-}
-
 
 .header-nav-link.current,
 .header-nav-link:focus,
@@ -79,13 +89,8 @@
 .contacts-link:hover {
     color: #404bbf;
 }
-
-.header-logo .logo-accent {
-    color: #4d5ae5;
-}
-
-.header-logo .logo-dark {
-    color: #2e2f42;
+.header-nav-link.current {
+    position: relative;
 }
 
 .header-nav-link.current::after{
@@ -99,4 +104,22 @@
     bottom: 0;
 
 }
+.header-menu-button{
+    display: none;
+}
 
+}
+
+@media screen and (min-width: 1158px) {
+.header-nav {
+    margin-left: 76px;
+  
+}  
+.contacts {
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+
+}
+}

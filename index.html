@@ -53,6 +53,12 @@
             </li>
           </ul>
         </address>
+        <button class="header-menu-button" type="button">
+          <svg class="menu-burger" width="24px" height="24px">
+            <use href="./images/icons.svg#menuburger">
+            </use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -120,13 +126,17 @@
         </div>
       </section>
 
-      <section class="team" id="team">
+      <section class="team " id="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-list-item">
               <img
-                class="team-img"
+                class="team-img" 
+                srcset="
+                ./images/team-1.jpg 1x,
+                 ./images/team-1@2x.jpg 2x"
+                 
                 src="./images/team-1.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -170,6 +180,7 @@
             <li class="team-list-item">
               <img
                 class="team-img"
+                srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x"
                 src="./images/team-2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -213,6 +224,7 @@
             <li class="team-list-item">
               <img
                 class="team-img"
+                srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
                 src="./images/team-3.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -256,6 +268,8 @@
             <li class="team-list-item">
               <img
                 class="team-img"
+                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
+
                 src="./images/team-4.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -300,7 +314,7 @@
         </div>
       </section>
 
-      <section class="portfolio" id="portfolio">
+      <section class="portfolio " id="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -308,6 +322,7 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-img"
+                  srcset="./images/portfolio-1.jpg 1x, ./images/portfolio-1@2x.jpg 2x"
                   src="./images/portfolio-1.jpg"
                   alt="Banking App"
                   width="360"
@@ -330,6 +345,7 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-img"
+                  srcset="./images/portfolio-2.jpg 1x, ./images/portfolio-2@2x.jpg 2x"
                   src="./images/portfolio-2.jpg"
                   alt="Banking App"
                   width="360"
@@ -352,6 +368,7 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-img"
+                  srcset="./images/portfolio-3.jpg 1x, ./images/portfolio-3@2x.jpg 2x"
                   src="./images/portfolio-3.jpg"
                   alt="Meditation App"
                   width="360"
@@ -374,6 +391,7 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-img"
+                  srcset="./images/portfolio-4.jpg 1x, ./images/portfolio-4@2x.jpg 2x"
                   src="./images/portfolio-4.jpg"
                   alt="Taxi Service"
                   width="360"
@@ -396,6 +414,7 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-img"
+                  srcset="./images/portfolio-5.jpg 1x, ./images/portfolio-5@2x.jpg 2x"
                   src="./images/portfolio-5.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -418,6 +437,7 @@
               <div class="portfolio-thumb">
                 <img
                   class="portfolio-img"
+                  srcset="./images/portfolio-6.jpg 1x, ./images/portfolio-6@2x.jpg 2x"
                   src="./images/portfolio-6.jpg"
                   alt="Online Courses"
                   width="360"
@@ -440,7 +460,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer" id="footer">
+    <footer class="footer " id="footer">
       <div class="container">
         <div class="footer-info">
           <a class="logo footer-logo" href="./index.html">
@@ -504,8 +524,67 @@
         </div>
       </div>
     </footer>
+    
+    <div id="mobile-menu" class="mobile-menu">
+      <button class="mobile-menu-button">
+        <svg width="8" height="8" class="menu-icon">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-nav">
+        <li class="menu-item-nav"><a class="menu-link-nav" href="">Studio</a></li>
+        <li class="menu-item-nav"><a class="menu-link-nav" href="">Portfolio</a></li>
+        <li class="menu-item-nav"><a class="menu-link-nav" href="">Contacts</a></li>
+      </ul>
 
-    <div id="modal" class="backdrop">
+    <div class="mobile-menu-buttom">
+           <ul class="mobile-menu-contacts">
+            <li class="menu-contacts-item">
+              <a class="menu-contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="menu-contacts-item">
+              <a class="menu-contacts-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+      <ul class="menu-socials-icons">
+                  <li>
+                    <a href="" class="menu-icons-items">
+                      <svg width="24" height="24">
+                        <use href="./images/icons.svg#instagram" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="menu-icons-items">
+                      <svg width="24" height="24">
+                        <use href="./images/icons.svg#twitter" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="menu-icons-items">
+                      <svg width="24" height="24">
+                        <use href="./images/icons.svg#facebook" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="menu-icons-items">
+                      <svg width="24" height="24">
+                        <use href="./images/icons.svg#linkedin" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+    </div>
+    </div>
+
+    <div id="modal" class="backdrop
+    ">
       <div class="modal">
         <button class="modal-btn" type="button">
           <svg class="modal-btn-icon" width="8px" height="8px">
@@ -552,10 +631,12 @@
     <use href="./images/icons.svg#checked-mark"></use>
   </svg>
 </span >
+<span>
   I accept the terms and conditions of the
    <a class="modal-agreement-link" href="#" target="_blank" rel="noopener noreferrer">
     Privacy Policy
    </a>
+   </span>
   </label>
  </div>
 

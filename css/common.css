@@ -7,10 +7,25 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+.features,
+.footer,
 .team,
 .portfolio {
-    padding: 120px 0;
+    padding: 96px 0;
 
+}
+
+@media screen and (min-width: 1158px) {
+    .portfolio,
+    .features,
+    .team{
+        padding: 120px 0;
+    }
+
+    .footer{
+        padding: 100px 0;
+    }
+    
 }
 a {
     text-decoration: none;
@@ -33,13 +48,26 @@ button{
     font-family: inherit;
     cursor: pointer;
 }
-.container {
+img {
+    width: 100%;
+    height: auto;
+}
+.container{
+    max-width: 320px;
+    padding: 0px 16px;
+    margin: 0 auto;
+}
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 768px;
+    }
+}
+@media screen and (min-width: 1158px) {
+    .container{
     max-width: 1158px;
     padding: 0 15px;
-    margin: 0 auto;
-
-
-
+    }
+    
 }
 
 .sr-only {
