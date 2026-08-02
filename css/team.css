@@ -20,27 +20,10 @@ flex-direction: column;
 gap: 72px;
     
 }
-@media screen and (min-width: 768px) {
-.team-list{
-flex-wrap: wrap;
-align-items: flex-start;
-justify-content: center;
-flex-direction: row;
-column-gap: 24px;
-row-gap: 64px;
-}
-    
-}
-@media screen and (width: 1158px) {
-.team-list{
-    align-items: center;
-    justify-content: flex-start;
-gap: 24px;
-}
-    
-}
+
 .team-list-item {
-    
+    max-width: 100%;
+    width: 264px;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
      0 1px 1px 0 rgba(46, 47, 66, 0.16),
@@ -100,4 +83,22 @@ padding: 32px 16px;
 
 .icons-items svg {
     fill: #f4f4fd;
+}
+
+@media screen and (min-width: 768px) {
+.team-list{
+flex-wrap: wrap;
+justify-content: center;
+flex-direction: row;
+column-gap: 24px;
+row-gap: 64px;
+}
+    
+}
+@media screen and (width: 1158px) {
+.team-list{
+    flex-wrap: nowrap;
+gap: 24px;
+}
+    
 }

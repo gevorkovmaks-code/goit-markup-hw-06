@@ -44,6 +44,7 @@ row-gap: 72px;
 }
 
 .icons-contur{
+    display: none;
     background-color: #f4f4fd;
     display: flex;
     align-items: center;
@@ -55,12 +56,6 @@ row-gap: 72px;
 
 }
 
-@media screen and (max-width: 1158px) {
-    .icons-contur{
-        display: none;
-    }
-    
-}
 
 @media screen and (min-width: 768px) {
 .features-list{
@@ -90,5 +85,8 @@ row-gap: 72px;
 }
 .features-description{
 font-weight: 400;
+}
+.icons-contur{
+    display: flex;
 }
 }
