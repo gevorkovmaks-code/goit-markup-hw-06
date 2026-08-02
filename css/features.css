@@ -69,6 +69,10 @@ row-gap: 72px;
     gap: 24px;
 
 }
+.features-list-item {
+    width: calc((100% - 24px * 3) / 4); 
+  }
+
 .features-list-title{
     font-weight: 500;
     font-size: 20px;
